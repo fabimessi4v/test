@@ -11,6 +11,13 @@
 (define (get_dia F)
   (car F
   ))
+;Modificador: Entra una fecha y el parametro a "cambiar" de la fecha
+(define (set_dia fecha d )
+  (if (list? fecha) (list d (cadr fecha) (caddr fecha ))  "Esto no es una fecha"
+
+  ))
+
+
 
 ;Probando........
 (define f1 (crear_Fecha 18 10 2023))
